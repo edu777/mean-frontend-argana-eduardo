@@ -1,0 +1,29 @@
+<br>
+<div>
+  <label>Name:</label>
+  <input type="text"[(ngModel)]='userToCreate.name'/>
+</div>
+
+<div>
+  <label>LastName:</label>
+  <input type="text" [(ngModel)]='userToCreate.lastname'/>
+</div>
+
+<div>
+  <label>UserName:</label>
+  <input type="text" [(ngModel)]='userToCreate.username'/>
+</div>
+
+<div>
+  <label>Password:</label>
+  <input type="password" [(ngModel)]='userToCreate.password'/>
+</div>
+
+<div>
+  <label>E-mail:</label>
+  <input type="email" [(ngModel)]='userToCreate.email'/>
+</div>
+
+<div class="button">
+  <button (click)="createNewUser()">Create a user</button>
+</div>

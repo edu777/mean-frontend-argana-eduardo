@@ -1,0 +1,20 @@
+<h2>User List</h2>
+<div>
+  <div class="detail-user"><B>Name</B></div>
+  <div class="detail-user"><B>Last name</B></div>
+  <div class="detail-user">
+    <button>Edit</button>
+    <button>View</button>
+  </div>
+  <div class="clean"></div>
+</div>
+
+<div *ngFor="let user of userList">
+  <div class="detail-user">{{user.name}}</div>
+  <div class="detail-user">{{user.lastname}}</div>
+  <div class="detail-user">
+    <button>Edit</button>
+    <button (click)="viewUser(user._id)">View</button>
+  </div>
+  <div class="clean"></div>
+</div>
