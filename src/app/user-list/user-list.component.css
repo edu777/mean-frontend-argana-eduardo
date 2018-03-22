@@ -1,10 +1,9 @@
-.detail-user{
+.detail-user
+{
     float: left;
     width: 15%;
     outline: black solid thin;
-
 }
-
 .clean{
     clear: both;
 }
